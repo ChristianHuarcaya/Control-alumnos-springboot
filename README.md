@@ -7,8 +7,8 @@ Este proyecto permite registrar, editar, listar y eliminar alumnos utilizando el
 -  Java 17
 -  Spring Boot
 -  Spring Data JPA
--  Thymeleaf (si aplica)
--  Base de datos H2 / PostgreSQL / MySQL (según tu config)
+-  Thymeleaf 
+-  PostgreSQL 
 -  Bootstrap para diseño (opcional)
 
 ## 📌 Funcionalidades
@@ -19,6 +19,8 @@ Este proyecto permite registrar, editar, listar y eliminar alumnos utilizando el
 - ✅ Listado completo de estudiantes
 
 ## 🧩 Estructura del Proyecto
+```bash
+
 
 ├── controller
 │ └── AlumnoController.java
@@ -36,6 +38,17 @@ Este proyecto permite registrar, editar, listar y eliminar alumnos utilizando el
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/ChristianHuarcaya/Control-alumnos-springboot.git
+
+2. Abre el proyecto en tu IDE (IntelliJ, STS, Eclipse, etc.)
+3. Configura la base de datos en `application.properties`
+4. Ejecuta la clase principal con `@SpringBootApplication`
+5. Accede desde tu navegador: `http://localhost:8080`
+
+## 📄 Autor
+
+Desarrollado por [Christian Huarcaya](https://github.com/ChristianHuarcaya)
+
+
 
 ## 👨‍💻 Autor
 
