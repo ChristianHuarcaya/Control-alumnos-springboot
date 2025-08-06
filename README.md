@@ -38,9 +38,7 @@ Este proyecto permite registrar, editar, listar y eliminar alumnos utilizando el
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/ChristianHuarcaya/Control-alumnos-springboot.git
-
 ```bash
-
 ## 👨‍💻 Autor
 
 **Cristian Huarcaya Pumahualcca**  
