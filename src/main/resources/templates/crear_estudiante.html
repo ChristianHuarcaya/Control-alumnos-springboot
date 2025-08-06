@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Registro de Estudiantes</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+	crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+		<a class="navbar-brand" href="#">Control de Estudiantes</a>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link"
+					th:href="@{/estudiantes}">Inicio</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container mt-5">
+		<div class="row justify-content-center">
+			<div class="col-md-6 card">
+				<h2 class="text-center mt-3">Registro de Estudiante</h2>
+				<div class="card-body">
+					<form th:action="@{/estudiantes}" th:object="${estudiante}"
+						method="POST">
+
+						<div class="form-group">
+							<label for="nombre">Nombre:</label> <input type="text"
+								th:field="*{nombre}" class="form-control"
+								placeholder="Digite su nombre" required>
+						</div>
+
+						<div class="form-group">
+							<label for="apellidos">Apellidos:</label> <input type="text"
+								th:field="*{apellidos}" class="form-control"
+								placeholder="Digite sus apellidos" required>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email:</label> <input type="email"
+								th:field="*{email}" class="form-control"
+								placeholder="Digite su email" required>
+						</div>
+
+						<div class="text-center">
+							<button type="submit" class="btn btn-success">Guardar</button>
+							<a th:href="@{/estudiantes}" class="btn btn-secondary ml-2">Cancelar</a>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
