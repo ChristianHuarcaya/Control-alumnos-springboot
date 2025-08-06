@@ -39,16 +39,7 @@ Este proyecto permite registrar, editar, listar y eliminar alumnos utilizando el
    ```bash
    git clone https://github.com/ChristianHuarcaya/Control-alumnos-springboot.git
 
-2. Abre el proyecto en tu IDE (IntelliJ, STS, Eclipse, etc.)
-3. Configura la base de datos en `application.properties`
-4. Ejecuta la clase principal con `@SpringBootApplication`
-5. Accede desde tu navegador: `http://localhost:8080`
-
-## 📄 Autor
-
-Desarrollado por [Christian Huarcaya](https://github.com/ChristianHuarcaya)
-
-
+```bash
 
 ## 👨‍💻 Autor
 
