@@ -1,62 +1,49 @@
-# Sistema de Autenticación con JWT - Spring Boot + PostgreSQL
+# 📚 Sistema de Registro de Alumnos - CRUD con Spring Boot
 
-Este proyecto implementa un sistema de autenticación basado en JSON Web Tokens (JWT), utilizando Spring Boot y una base de datos PostgreSQL.
+Este proyecto permite registrar, editar, listar y eliminar alumnos utilizando el framework **Spring Boot**, siguiendo la arquitectura MVC (Modelo - Vista - Controlador).
 
-## 🔐 Tecnologías usadas
+## 🚀 Tecnologías utilizadas
 
-- Java 17
-- Spring Boot
-- Spring Security
-- JWT (Json Web Token)
-- PostgreSQL
-- JPA / Hibernate
+-  Java 17
+-  Spring Boot
+-  Spring Data JPA
+-  Thymeleaf (si aplica)
+-  Base de datos H2 / PostgreSQL / MySQL (según tu config)
+-  Bootstrap para diseño (opcional)
 
-## ⚙️ Funcionalidades
+## 📌 Funcionalidades
 
-- Registro de usuarios
-- Login con generación de token JWT
-- Validación de token en cada request
-- Roles desde base de datos (no en memoria)
-- Seguridad con filtros personalizados
+- ✅ Registrar un nuevo alumno
+- ✅ Editar los datos de un alumno
+- ✅ Eliminar un alumno
+- ✅ Listado completo de estudiantes
 
-## 🧪 Endpoints principales
+## 🧩 Estructura del Proyecto
 
-| Método | Endpoint              | Descripción                     |
-|--------|-----------------------|---------------------------------|
-| POST   | `/security/login`     | Iniciar sesión y obtener token  |
-| POST   | `/security/register`  | Registrar nuevo usuario         |
-| GET    | `/saludo`             | Endpoint protegido con JWT      |
+├── controller
+│ └── AlumnoController.java
+├── entity
+│ └── Alumno.java
+├── repository
+│ └── IAlumnoRepository.java
+├── service
+│ └── AlumnoServiceImpl.java
+├── templates (si usa Thymeleaf)
+│ └── listado.html / formulario.html
 
-## 📦 Estructura del proyecto
+## 🛠️ Cómo ejecutar localmente
 
-src/
-├── main/
-│ ├── java/com/tuempresa/
-│ │ ├── config/ → Configuraciones de seguridad
-│ │ ├── controller/ → Controladores REST
-│ │ ├── model/ → Entidades JPA
-│ │ ├── repository/ → Repositorios JPA
-│ │ └── service/ → Lógica de negocio
-│ └── resources/
-│ └── application.properties
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/ChristianHuarcaya/Control-alumnos-springboot.git
+
+## 👨‍💻 Autor
+
+**Cristian Huarcaya Pumahualcca**  
+Desarrollador Backend en Java  
+[LinkedIn](https://www.linkedin.com/in/christian-huarcaya-pumahualcca) | [GitHub](https://github.com/ChristianHuarcaya)
 
 
-## 🚀 Cómo correr el proyecto
-
-1. Clona el repositorio  
-```bash
-git clone https://github.com/ChristianHuarcaya/Sistema-autenticacion-jwt-token-aunthenticacion-postgresql.git
-Configura tu base de datos PostgreSQL en application.properties
-
-Ejecuta la aplicación desde tu IDE o con:
-
-bash
-
-./mvnw spring-boot:run
-👨‍💻 Autor
-Christian Huarcaya
-Desarrollador Backend | Java 💻
-LinkedIn
 
 
 
